@@ -1,0 +1,205 @@
+
+
+
+{% extends "base.html" %}
+{% block content %}
+<br><br>
+    <div class="container">
+        <div class="page-header">
+            <h1>Formularz</h1>
+        </div>
+    </div>
+
+
+<div class="container" style="background-color:white;">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+        <form role="form" action="/save" method="post">
+ <h3>Metryczka</h3><hr>
+    <br>
+<div class="form-group-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="sex">Płeć:</label>
+      <select class="form-control-static" id="sex" name="sex">
+        <option>kobieta</option>
+        <option>mężczyzna</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="age">Wiek:</label>
+      <select class="form-control-static" id="age" name="age">
+        <option>poniżej 19</option>
+        <option>19-25</option>
+        <option>26-35</option>
+        <option>36-50</option>
+        <option>powyżej 50</option>
+      </select>
+    </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="edu">Wykształecenie:</label>
+      <select class="form-control-static" id="edu" name="edu">
+        <option>podstawowe</option>
+        <option>średnie</option>
+        <option>zawodowe</option>
+        <option>wyższe</option>
+      </select>
+    </div>
+</div>
+
+<br>
+
+ <h3>Ankieta</h3><hr>
+<br>
+    <b>Celiakia jest to:</b>
+    <div class="form-group">
+        <label class="radio">
+            <input type="radio" name="q1" value="2"> a)	alergia na gluten
+        </label>
+        <label class="radio">
+            <input type="radio" name="q1" value="1">b)	choroba autoimmunologiczna o podłożu genetycznym, charakteryzująca się trwałą nietolerancją glutenu
+        </label>
+        <label class="radio">
+          <input type="radio" name="q1" value="3">c)	najczęstsza choroba pęcherzowa u dzieci związana z nietolerancją glutenu
+        </label>
+    </div><br>
+
+    <b>Gluten jest zawarty w:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q2" value="2">a)	zbożach (owsie, jęczmieniu, prosie)
+        </label>
+        <label class="radio">
+          <input type="radio" name="q2" value="3">b)	ziemniakach i zbożach
+        </label>
+        <label class="radio">
+          <input type="radio" name="q2" value="1">c)	zbożach (pszenicy, życie, jęczmieniu)
+        </label>
+    </div><br>
+
+    <b>Działanie toksyczne glutenu prowadzi do:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q3" value="1">a)	zaniku kosmków jelita cienkiego i w efekcie upośledzenia wchłaniania pokarmu
+        </label>
+        <label class="radio">
+          <input type="radio" name="q3" value="2">b)	zaburzenia przepływu krwi w obrębie wyrostka robaczkowego, co powoduje jego martwicę
+        </label>
+        <label class="radio">
+          <input type="radio" name="q3" value="3">c)	przerwania ciągłości przewodu pokarmowego
+        </label>
+    </div><br>
+
+ <b>Choroba ujawnia się:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q4" value="2">a)	w wieku dziecięcym
+        </label>
+        <label class="radio">
+          <input type="radio" name="q4" value="3">b)	w wieku dorastania
+        </label>
+        <label class="radio">
+          <input type="radio" name="q4" value="1">c)	w każdym wieku
+        </label>
+    </div><br>
+
+    <b>Choroba częściej występuje u:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q5" value="1">a)	kobiet
+        </label>
+        <label class="radio">
+          <input type="radio" name="q5" value="2">b)	mężczyzn
+        </label>
+        <label class="radio">
+          <input type="radio" name="q5" value="3">c)	tak samo często u kobiet i mężczyzn
+        </label>
+    </div><br>
+
+    <b>Kosmki jelita cienkiego nie są:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q6" value="2">a)	maleńkimi wypustkami błony śluzowej
+        </label>
+        <label class="radio">
+          <input type="radio" name="q6" value="3">b)	tworami zwiększającymi powierzchnię jelita, odpowiedzialnymi za wchłanianie składników odżywczych
+        </label>
+        <label class="radio">
+          <input type="radio" name="q6" value="1">c)	splotami autonomicznymi mięśniówki przewodu pokarmowego
+        </label>
+    </div><br>
+
+     <b>Celiakię można leczyć za pomocą:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q7" value="2">a)	szczepionki
+        </label>
+        <label class="radio">
+          <input type="radio" name="q7" value="1">b)	ścisłej diety bezglutenowej
+       </label>
+        <label class="radio">
+          <input type="radio" name="q7" value="3">c)	leczenia operacyjnego
+        </label>
+    </div><br>
+
+    <b>Celiakię wykrywa się najczęściej u osób:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q8" value="2">a)	50-80-letnich
+        </label>
+        <label class="radio">
+          <input type="radio" name="q8" value="3">b)	10-20-letnich
+       </label>
+        <label class="radio">
+          <input type="radio" name="q8" value="1">c)	30-50-letnich
+        </label>
+    </div><br>
+
+    <b>Częstość zachorowań na celiakię:</b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q9" value="1">a)	około 1:100 osób
+        </label>
+        <label class="radio">
+          <input type="radio" name="q9" value="2">b)	około 1:200 osób
+       </label>
+        <label class="radio">
+          <input type="radio" name="q9" value="3">c)	około 1:1000 osób
+        </label>
+    </div><br>
+    <b><label class="radio control-label">Celiakia atakuje:</label></b>
+    <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="q10" value="2">a)	żołądek
+        </label>
+        <label class="radio">
+          <input type="radio" name="q10" value="3">b)	wątrobę
+       </label>
+        <label class="radio">
+          <input type="radio" name="q10" value="1">c)	jelita
+        </label>
+    </div><br>
+
+
+             <div class="row">
+       <div class="col-md-1 col-md-offset-5">
+            <button type="submit" class="btn btn-lg btn-default">Zapisz odpowiedzi</button>
+       </div>
+   </div>
+<br>
+
+        </form>
+     </div>
+    </div>
+ </div>
+ <br>
+
+
+
+{% endblock %}
+
+<!--  </body>
+</html>
+
+-->

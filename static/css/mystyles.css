@@ -1,0 +1,217 @@
+*{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.jumbotron{
+	margin: 0px 0px 20px 0px;
+    padding: 40px 20px 40px 20px;
+    min-height: 260px;
+    background-color: #303030 ;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: aliceblue;
+}
+
+.jumbotron h1{
+    font-size: 60px;
+    text-align: left;
+}
+
+.jumbotron p{
+    font-size: 20px;
+    text-align: left;
+}
+
+#link p{
+    box-sizing: border-box;
+    min-height: 145px;
+    margin: 0px 0px 10px 0px;
+    padding: 45px 50px 45px 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+#link p > a{
+    color: #303030;
+
+}
+
+#link p > a:hover{
+    color: #4d4d4d;
+}
+
+.row-footer{
+    background-color: #d9d9d9;
+    margin: 50px 0px 0px 0px;
+    font-size: 16px;
+
+}
+
+.row-footer a{
+    color: #303030;
+}
+
+.row-footer a:hover{
+    color: #4d4d4d;
+}
+
+ 
+th{
+    background-color: #303030 ;
+    color: aliceblue;
+}
+ 
+td{
+    vertical-align: middle;
+    border: 1px solid #303030;
+    text-align: center;
+}
+
+th{
+    vertical-align: middle;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: #d9d9d9;
+}
+
+form{
+    font-size: 18px;
+
+}
+
+.container .questions{
+  background-color: #e5d5ea;
+  border-width: 1px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+form > div > div > div > div.form-group > input{
+    width: 250px;
+    height: 40px;
+    margin: 5px 0px 8px 0px;
+    border-color: #b3b3b3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+form > div > div > div > h3{
+  font-style: italic;
+  padding: 10px 0px;
+}
+
+form > div > div > div > div.form-group > input:focus{
+    background-color: #d8ecf3;
+    color: #303030;
+
+}
+
+form > div > div > div > div.form-group > select{
+    width: 250px;
+    height: 40px;
+    margin: 5px 0px 8px 0px;
+    border-color: #b3b3b3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+form > div > div > div > div.form-group > select:focus{
+    background-color: #d8ecf3;
+    color: #303030;
+
+}
+
+input[type=radio]{
+    height: 20px;
+    width: 20px;
+}
+
+label.radio-inline{
+    padding-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+form > div.form-group > b{
+    font-size: 18px;
+}
+
+form > h3{
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+form{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button[type=submit]{
+    width: 250px;
+    height: 40px;
+    background-color: #303030;
+    color: aliceblue;
+    border-color: #303030;
+    border-radius: 6px;
+}
+
+
+#agepiechart, #statuspiechart{
+  box-sizing: border-box;
+  margin-top: -30px;
+  margin-bottom: -80px;
+  
+}
+
+#averagepiechart, #degreepiechart{
+  box-sizing: border-box;
+  margin-top: -30px;
+  margin-bottom: -20px;
+}
+
+#typepiechart, #univeristypiechart{
+  box-sizing: border-box;
+  margin-top: -30px;
+  margin-bottom: -80px;
+
+}
+
+#studydegreepiechart{
+  box-sizing: border-box;
+  margin-top: -30px;
+  margin-bottom: -25px;
+}
+
+#q123columnchart, #q46columnchart, #q789columnchart{
+  box-sizing: border-box;
+  margin-left: -15px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.question-title {
+  color: #737373;
+  line-height: 1.42857143;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: -15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+    background-color: aliceblue;
+    
+}

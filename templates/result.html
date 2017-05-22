@@ -1,0 +1,71 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<br><br>
+<div class="container">
+<div class="form-group">
+  <div class="row">
+    <div class="col-sm-2" style="background-color:#00cc999;">
+       <div class="form-group">
+  <img src="http://przepisybezglutenowe.pl/wp-content/uploads/2013/10/przekreslony_klos.jpg" class="img-circle" alt="Cinque Terre" width="180" height="135">
+</div>
+    </div>
+    <div class="col-sm-9">
+      <div class="well" style="background-color:#00cc99;">
+  <h2 >Celiakia - wyniki badań z ankiety: odpowiedzi na pytania</h2>
+  </div>
+
+
+<br/><br/>
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+
+        <th>ID</th>
+        <th>Płeć</th>
+        <th>Wiek</th>
+        <th>Edukacja</th>
+        <th>P1</th>
+        <th>P2</th>
+        <th>P3</th>
+        <th>P4</th>
+        <th>P5</th>
+        <th>P6</th>
+        <th>P7</th>
+        <th>P8</th>
+        <th>P9</th>
+        <th>P10</th>
+      </tr>
+    </thead>
+    <tbody>
+     {% for element in formdata %}
+      <tr>
+        <td>{{ element.id }}</td>
+        <td>{{ element.sex }}</td>
+        <td>{{ element.age }}</td>
+        <td>{{ element.edu }}</td>
+        <td>{{ element.q1 }}</td>
+        <td>{{ element.q2 }}</td>
+        <td>{{ element.q3 }}</td>
+        <td>{{ element.q4 }}</td>
+        <td>{{ element.q5 }}</td>
+        <td>{{ element.q6 }}</td>
+        <td>{{ element.q7 }}</td>
+        <td>{{ element.q8 }}</td>
+        <td>{{ element.q9 }}</td>
+        <td>{{ element.q10 }}</td>
+      </tr>
+     {% endfor %}
+
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}

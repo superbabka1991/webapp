@@ -1,0 +1,25 @@
+body { background: #8CB6C3 !important;
+}
+.page-header{
+    color: white !important;
+    text-align: center;
+
+}
+.btn-default{
+    text-align: center;
+}
+.container{
+    border-radius: 20px;
+}
+.container.h2{
+    text-align: center;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
